@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' //can be deleted
 
 function OpenPage() {
     return (
