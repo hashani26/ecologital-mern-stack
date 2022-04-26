@@ -7,3 +7,4 @@
 7. *pls use console log resetCode value to verify email when registration process* in case you didnt receive email with verification code
 8. admin email - admin@richdn.com
 9. admin pw - kajadob169@richdn.com
+10. go to link http://localhost:3000/login for the starting point
