@@ -9,12 +9,14 @@ const mongoose = require("mongoose");
 app.use(cors())
 
 const connect = mongoose.connect(process.env.mongoURI,
-{
+  {
     useNewUrlParser: true, useUnifiedTopology: true,
     useCreateIndex: true, useFindAndModify: false
-})
-.then(() => console.log('MongoDB Connected...'))
-.catch(err => console.log(err));
+  })
+  .then(() => console.log('MongoDB Connected...'))
+  .catch(err => {
+    console.log(err.body)
+  });
 
 //to not get any deprecation warning or error
 //support parsing of application/x-www-form-urlencoded post data
